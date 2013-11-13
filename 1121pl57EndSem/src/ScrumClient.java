@@ -13,8 +13,6 @@ public class ScrumClient {
 		Story story = new Story(sprint, stitle_array, 1, 3);
 		Task task1 = new Task(story, "UI for registration");
 		Task task2 = new Task(story, "Test Case for registration");
-		
-
 		ArrayList<TeamMember> teams = new ArrayList<TeamMember>();
 		TeamMember tm1 = new Member("Peter", task1);
 		TeamMember tm2 = new ProductOwner("Nadia", task2);
@@ -37,7 +35,14 @@ public class ScrumClient {
 		System.out.println("Sprint 1 Stories: ");
 		for(int i=0; i<story.getStitle_array().size(); i++)
 		{
-			System.out.println("\t"+story.getStitle_array().get(i));
+			System.out.println("\t"+team.getTeams().get(i).getTask().getStory().getStitle_array().get(i));
+			for(int j=0; j<2; j++)
+			{
+			
+				System.out.println("\t\t"+team.getTeams().get(j).getTask().getTask_name()+"\t"+team.getTeams().get(j).getName());
+			
+
+			}
 		}
 		System.out.println("Adding a new Story to the list...");
 		story.addStitle_array("As a member i want to cast my vote");

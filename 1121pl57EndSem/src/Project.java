@@ -2,6 +2,7 @@
 public class Project {
 
 	private String project_name;
+	private String scrum_board;
 
 	public Project(String name) {
 		// TODO Auto-generated constructor stub
