@@ -2,11 +2,20 @@
 public class Project {
 
 	private String project_name;
-	private String scrum_board;
+	private ScrumBoard sb = new ScrumBoard() ;
 
-	public Project(String name) {
+	public ScrumBoard getSb() {
+		return sb;
+	}
+
+	public void setSb(ScrumBoard sb) {
+		this.sb = sb;
+	}
+
+	public Project(String name, ScrumBoard sb) {
 		// TODO Auto-generated constructor stub
 		this.project_name = name;
+		this.sb = sb;
 	}
 
 	public Project() {

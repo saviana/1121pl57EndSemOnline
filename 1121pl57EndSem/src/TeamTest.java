@@ -33,7 +33,7 @@ public class TeamTest {
 		teams.add(tm1);
 		teams.add(tm2);
 		teams.add(tm3);
-		project = new Project("Online Voting System");
+		project = new Project("Online Voting System", null);
 		team = new Team("Team1", 12, project, teams);
 	}
 
@@ -41,5 +41,11 @@ public class TeamTest {
 	public void testVelocity() {
 		assertEquals(12, team.getVelocity());
 	}
+	
+	public void testtask() {
+		assertEquals("UI for registration", team.getTeams().get(0).getTask().getTask_name());
+	}
+	
+	
 
 }
