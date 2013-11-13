@@ -29,8 +29,8 @@ public class Story {
 		return stitle_array;
 	}
 
-	public void setStitle_array(ArrayList<String> stitle_array) {
-		this.stitle_array = stitle_array;
+	public void addStitle_array(String string) {
+		this.stitle_array.add(string);
 	}
 
 	public int getPriority() {

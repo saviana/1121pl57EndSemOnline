@@ -1,7 +1,7 @@
 
-public class Member extends TeamMember {
+public class ProductOwner extends TeamMember {
 
-	public Member(String string, Task task1) {
+	public ProductOwner(String string, Task task1) {
 		// TODO Auto-generated constructor stub
 		this.name=string;
 		this.task = task1;

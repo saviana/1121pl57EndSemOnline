@@ -26,4 +26,8 @@ public class Task {
 		this.task_name = task;
 	}
 
+	public Task() {
+		// TODO Auto-generated constructor stub
+	}
+
 }

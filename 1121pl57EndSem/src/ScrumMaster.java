@@ -1,10 +1,9 @@
 
-public class Member extends TeamMember {
+public class ScrumMaster extends TeamMember {
 
-	public Member(String string, Task task1) {
+	public ScrumMaster(String string) {
 		// TODO Auto-generated constructor stub
 		this.name=string;
-		this.task = task1;
 	}
 
 	@Override
@@ -16,7 +15,7 @@ public class Member extends TeamMember {
 	@Override
 	public Task getTask() {
 		// TODO Auto-generated method stub
-		return task;
+		return null;
 	}
 
 }
